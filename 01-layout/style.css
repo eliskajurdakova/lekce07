@@ -16,3 +16,28 @@ body {
 .treti { background-color: #8e44ad;}
 
 /* ---------------------------------------------------- */
+
+@media (min-width: 600px){
+    .kontejner {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .horni,
+    .treti {
+        flex-basis: 100%;
+
+    }
+    .prvni, 
+    .druhy {
+        flex-basis: 50%;
+    }
+}
+
+@media (min-width: 960px){
+    .prvni,
+    .druhy,
+    .treti {
+        flex-basis: calc(100% / 3);
+    }
+}
